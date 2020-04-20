@@ -10,6 +10,7 @@ import (
 	. "../../elevatortypes"
 	"math/rand"
 	"time"
+	
 )
 
 // Encodes received values from `chans` into type-tagged JSON, then broadcasts
@@ -168,7 +169,7 @@ func BroadcastState(updatePacketC <-chan GlobalElevator,
 		select {
 		case <-ticker.C:
 			toNetworkC <- latestPacket
-			log.Println(latestPacket.HallRequests)
+			//log.Println(latestPacket.HallRequests)
 
 		case newPacket := <-updatePacketC:
 			latestPacket = newPacket
