@@ -1,0 +1,6 @@
+pkg/
+bin/
+src/github.com
+src/golang.org
+src/fsm/stateBackup/*
+!src/fsm/stateBackup/.gitkeep
